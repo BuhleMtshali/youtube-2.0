@@ -19,7 +19,8 @@ document.addEventListener('DOMContentLoaded', () => {
     fetchVideos();
 });
 
-//fetch video api
+
+//fetch home video api
 function fetchVideos(videos){
     const options = {
         method: 'GET',
@@ -33,13 +34,14 @@ function fetchVideos(videos){
     axios.get(url, options).then(response => renderVideos(response.data.list)).catch(error => console.error('Error fetching videos', error));
 }
 
+
 //defining variables
 let videoContainer = document.querySelector('.videos');
 
 //function for rendering videos
 function renderVideos(videos){
     videoContainer.innerHTML = '';
-    console.log(videos);
+    // console.log(videos);
     videos.forEach((video) => {
         const vidItem = document.createElement('div');
         vidItem.classList.add('video');
