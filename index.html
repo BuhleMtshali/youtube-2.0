@@ -7,11 +7,34 @@
 <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="app.css">
 <link rel="stylesheet" href="responsive.css">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<script src="https://kit.fontawesome.com/47ef0eeb2e.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <header class="header"></header>
+    <header class="header">
+        <div class="logo left">
+            <i class="fa-solid fa-bars" id="menu"></i>
+            <img src="assets/images/logo.png" class="logo-img" alt="logo">
+        </div>
+            <!-- end of logo -->
+        <div class="search center">
+            <form >
+            <input type="text" placeholder="Search" />
+            <button><i class="material-icons">search</i></button>
+            </form>
+            <i class="material-icons mic">mic</i>
+        </div>
+            <!-- end of search -->
+        <div class="icons right">
+            <i class="material-icons">videocam</i>
+            <i class="material-icons">apps</i>
+            <i class="material-icons">notifications</i>
+            <i class="material-icons display-this">account_circle</i>  
+        </div>
+            <!-- end of icons right -->
+    </header>
     <main>
-        <div class="sidebar"></div>
+        <div class="side-bar"></div>
         <div class="content"></div>
     </main>
 </body>
