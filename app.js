@@ -1,7 +1,8 @@
 //toggling the sidebar
 document.getElementById('menu').addEventListener('click', () => {
     let sideBar = document.querySelector('.side-bar');
-    sideBar.classList.toggle('hide')
+    sideBar.classList.toggle('hide');
+    console.log('clicked')
 });
 
 //adding the active class to the nav-link
